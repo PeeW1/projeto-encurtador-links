@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+:root {
+    --bg-main: rgb(45, 48, 59);
+    --color-white: rgb(229, 230, 223);
+    --main-font: "Sigmar", serif;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: var(--bg-main);
+    font-family: var(--main-font);
+    color: var(--color-white);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 3px solid var(--color-white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 3px;
+}
+.container-btn {
+    display: flex;
+    margin-right: 11px;
+    gap: 5px;
+}
+
+
+.btn {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--color-white);
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--bg-main);
+    transition: 0.5s;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid var(--color-white);
+    border-radius: 5px;
+}
+
+input::placeholder {
+    text-align: center;
+    color: var(--color-white);
+}
